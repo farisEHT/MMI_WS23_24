@@ -21,4 +21,12 @@ describe('#sum()', function () {
         expect(sum([1, 2, 3, 4, 5])).to.equal(15);
     })
 
+it('should return zero for an empty array', function () {
+    expect(sum([])).to.equal(0);
+});
+
+it('should add positive and negative numbers', function () {
+    expect(sum([-5, 2, -3])).to.equal(-6);
+});
+
 });
